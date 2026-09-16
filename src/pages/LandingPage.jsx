@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { InteractiveUploader } from '../components/InteractiveUploader';
-import { ArrowRight, BrainCircuit, ShieldCheck, Sprout, CloudLightning, TrendingUp, Plane } from 'lucide-react';
+import { ArrowRight, BrainCircuit, ShieldCheck, Sprout, CloudLightning, TrendingUp, Plane, Leaf } from 'lucide-react';
 
 export const LandingPage = () => {
   return (
@@ -124,6 +124,16 @@ export const LandingPage = () => {
               <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>Drone Integration</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: 1.6 }}>
                 Seamlessly upload multi-spectral aerial imagery from your autonomous fleet to map soil variance across thousands of acres instantly.
+              </p>
+            </div>
+
+            <div className="glass-panel animate-fade-up" style={{ padding: '3rem', animationDelay: '1.2s' }}>
+              <div style={{ background: 'rgba(34, 197, 94, 0.1)', width: '56px', height: '56px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', border: '1px solid rgba(34, 197, 94, 0.2)' }}>
+                <Leaf size={28} color="#22c55e" />
+              </div>
+              <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>Carbon Tracking</h3>
+              <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: 1.6 }}>
+                Monitor your soil's carbon sequestration levels over time. Unlock potential revenue through agricultural carbon credit marketplaces.
               </p>
             </div>
           </div>
