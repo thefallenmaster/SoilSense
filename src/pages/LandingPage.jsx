@@ -16,39 +16,41 @@ export const LandingPage = () => {
           <div style={{ position: 'absolute', top: '40%', right: '15%', width: '400px', height: '400px', background: 'var(--accent-secondary-glow)', filter: 'blur(150px)', borderRadius: '50%', animation: 'float 10s ease-in-out infinite reverse' }} />
         </div>
 
-        <section className="container" style={{ textAlign: 'center', paddingBottom: '6rem' }}>
-          <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            <span style={{ 
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              padding: '0.5rem 1.5rem', 
-              background: 'rgba(192, 132, 252, 0.1)', 
-              color: 'var(--accent-primary)',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid rgba(192, 132, 252, 0.3)',
-              fontWeight: 600,
-              marginBottom: '2rem',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase',
-              fontSize: '0.85rem',
-              boxShadow: '0 0 20px rgba(192, 132, 252, 0.15)'
-            }}>
-              <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent-primary)', animation: 'pulseGlow 2s infinite' }} />
-              SoilSense AI Engine 2.0
-            </span>
+        <section className="container" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '4rem', paddingBottom: '6rem' }}>
+          <div style={{ flex: '1 1 500px' }}>
+            <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
+              <span style={{ 
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.5rem 1.5rem', 
+                background: 'rgba(192, 132, 252, 0.1)', 
+                color: 'var(--accent-primary)',
+                borderRadius: 'var(--radius-full)',
+                border: '1px solid rgba(192, 132, 252, 0.3)',
+                fontWeight: 600,
+                marginBottom: '2rem',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+                fontSize: '0.85rem',
+                boxShadow: '0 0 20px rgba(192, 132, 252, 0.15)'
+              }}>
+                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent-primary)', animation: 'pulseGlow 2s infinite' }} />
+                SoilSense AI Engine 2.0
+              </span>
+            </div>
+            
+            <h1 className="animate-fade-up" style={{ fontSize: 'clamp(3.5rem, 6vw, 6rem)', lineHeight: 1.05, marginBottom: '2rem', animationDelay: '0.2s', textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+              Future of Farming <br/>
+              <span className="text-gradient">Powered by AI</span>
+            </h1>
+            
+            <p className="animate-fade-up" style={{ color: 'var(--text-muted)', fontSize: 'clamp(1.1rem, 1.5vw, 1.35rem)', maxWidth: '600px', marginBottom: '2rem', animationDelay: '0.3s', lineHeight: 1.7 }}>
+              Transform your harvest. Upload a high-resolution image of your soil and our advanced neural networks will analyze its composition instantly with <span style={{ color: '#fff', fontWeight: 500 }}>99.8% precision</span>.
+            </p>
           </div>
-          
-          <h1 className="animate-fade-up" style={{ fontSize: 'clamp(3.5rem, 8vw, 7rem)', lineHeight: 1.05, marginBottom: '2rem', animationDelay: '0.2s', textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-            Future of Farming <br/>
-            <span className="text-gradient">Powered by AI</span>
-          </h1>
-          
-          <p className="animate-fade-up" style={{ color: 'var(--text-muted)', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', maxWidth: '750px', margin: '0 auto 4rem auto', animationDelay: '0.3s', lineHeight: 1.7 }}>
-            Transform your harvest. Upload a high-resolution image of your soil and our advanced neural networks will analyze its composition instantly with <span style={{ color: '#fff', fontWeight: 500 }}>99.8% precision</span>.
-          </p>
 
-          <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <div className="animate-fade-up" style={{ flex: '1 1 400px', animationDelay: '0.4s' }}>
             <InteractiveUploader />
           </div>
         </section>
